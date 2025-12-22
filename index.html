@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meals</title>
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="vh-100">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/Navigation Bar.png"
+              alt="Logo"
+              class="img-fluid"
+              style="width: 35px; margin-left: 10px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link gb-hover" href="#home">
+                  <i class="fa-solid fa-house"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link gg-hover" href="#about">
+                  <i class="fas fa-users"></i> About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link gp-hover" href="#projects">
+                  <i class="fa-solid fa-diagram-project"></i> Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link go-hover" href="#references">
+                  <i class="fas fa-handshake"></i> References
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link gm-hover" href="#gallery">
+                  <i class="fa-regular fa-image"></i> Gallery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link gl-hover" href="#contact">
+                  <i class="fa-regular fa-id-card"></i> Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="d-flex flex-column justify-content-center align-items-center text-white text-center"
+      >
+        <h1 style="margin-top: 200px">Welcome To Our Restaurant</h1>
+        <p>Here You Get The Most Delicious Food In The World</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="form-container">
+        <h2 class="form-title">Sign In</h2>
+        <div id="alertMessage" class="alert alert-danger"></div>
+        <form id="signInForm">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <div class="invalid-feedback" id="emailError"></div>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+            <div class="invalid-feedback" id="passwordError"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-custom">
+            Sign In
+          </button>
+        </form>
+        <div class="text-center mt-3">
+          <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
+      </section>
+
+      <section class="portfolio text-white" id="portfolio">
+        <div class="container">
+          <h2 class="heading">Latest <span>Meals</span></h2>
+          <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="portfolio-box">
+                <img src="images/1.jpg" alt="Sausage" />
+                <div class="portfolio-layer">
+                  <h3>Sausage</h3>
+                  <p>
+                    Sausage is a popular, convenient way to enjoy a flavorful
+                    protein.
+                  </p>
+                  <button class="btn btn-light">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="portfolio-box">
+                <img src="images/2.jpg" alt="Burger" />
+                <div class="portfolio-layer">
+                  <h3>Burger</h3>
+                  <p>
+                    Burgers are a versatile fast food, combining a savory patty.
+                  </p>
+                  <button class="btn btn-light">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="portfolio-box">
+                <img src="images/3.jpg" alt="Pizza" />
+                <div class="portfolio-layer">
+                  <h3>Pizza</h3>
+                  <p>
+                    Pizza features a dough base topped with sauce, cheese, and
+                    ingredients.
+                  </p>
+                  <button class="btn btn-light">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="portfolio-box">
+                <img src="images/4.jpg" alt="Beef" />
+                <div class="portfolio-layer">
+                  <h3>Beef</h3>
+                  <p>
+                    Beef is a rich, protein-packed meat, commonly used in
+                    steaks.
+                  </p>
+                  <button class="btn btn-light">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="portfolio-box">
+                <img src="images/5.jpg" alt="Chicken" />
+                <div class="portfolio-layer">
+                  <h3>Chicken</h3>
+                  <p>
+                    Chicken is a lean, versatile meat used in a wide range of
+                    dishes.
+                  </p>
+                  <button class="btn btn-light">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="portfolio-box">
+                <img src="images/6.jpg" alt="Meat" />
+                <div class="portfolio-layer">
+                  <h3>Meat</h3>
+                  <p>
+                    Meat is a rich source of protein, iron, and essential
+                    nutrients.
+                  </p>
+                  <button class="btn btn-light">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <button
+              id="rating"
+              class="btn btn-primary rounded-circle"
+              style="width: 7rem"
+            >
+              Rate Us
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews"></section>
+    </main>
+    <footer class="text-center fs-14" style="color: #666; margin: 20px 0">
+      <p>&copy; 2024. All rights reserved.</p>
+    </footer>
+    <script src="JavaScript/bootstrap.js"></script>
+    <script src="JavaScript/script.js"></script>
+  </body>
+</html>

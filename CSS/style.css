@@ -1,0 +1,367 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #212121;
+  text-align: center;
+}
+
+.navbar {
+  width: 100%;
+  margin: 0;
+}
+
+.navbar .navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark {
+  width: 100%;
+  padding: 0;
+}
+
+.gb-hover:hover,
+.gg-hover:hover,
+.gp-hover:hover,
+.go-hover:hover,
+.gm-hover:hover,
+.gl-hover:hover {
+  border-radius: 5px;
+  transition: background-color 0.4s, transform 0.3s;
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+  background-size: 300% 300%;
+  animation: rgbBackground 6s ease infinite;
+  border-radius: 5px;
+}
+
+@keyframes rgbBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-item {
+  width: auto;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+  }
+}
+
+.gb-hover:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(18, 194, 233, 1),
+    rgba(196, 113, 237, 1),
+    rgba(246, 79, 89, 1)
+  );
+}
+
+.gg-hover:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 153, 1),
+    rgba(73, 50, 64, 1)
+  );
+}
+
+.gp-hover:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(73, 50, 64, 1),
+    rgba(195, 20, 50, 1)
+  );
+}
+
+.go-hover:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(195, 20, 50, 1),
+    rgba(245, 175, 25, 1)
+  );
+}
+
+.gm-hover:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(245, 175, 25, 1),
+    rgba(233, 64, 87, 1),
+    rgba(138, 35, 135, 1)
+  );
+}
+
+.gl-hover:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgba(138, 35, 135, 1),
+    rgba(237, 33, 58, 1)
+  );
+}
+
+header {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 255, 0.671),
+    rgb(0, 225, 255)
+  );
+}
+
+.form-container {
+  max-width: 85%;
+  margin: 50px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.btn-custom {
+  width: 100%;
+}
+
+.alert {
+  display: none;
+}
+.portfolio {
+  padding: 4rem 0;
+  background-color: #f5f7fa;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 4rem;
+}
+
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  height: 100%;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  flex-grow: 1;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-layer {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-box:hover .portfolio-layer {
+  opacity: 1;
+}
+
+.portfolio-layer h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.portfolio-layer p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.portfolio-layer button {
+  background-color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.portfolio-layer button a {
+  color: #333;
+  text-decoration: none;
+}
+
+.portfolio-layer button i {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#rating {
+  width: 7rem;
+  height: 7rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+#rating a {
+  color: #fff;
+}
+
+/* Media Queries for responsive layout */
+@media (max-width: 992px) {
+  .portfolio-box img {
+    height: 200px;
+  }
+  .portfolio .row {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-box {
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-box img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .portfolio-box img {
+    height: 150px;
+  }
+
+  .portfolio h2 {
+    font-size: 2.5rem;
+  }
+}
+.snip {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  color: #9e9e9e;
+  display: inline-block;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  margin: 35px 10px 10px;
+  max-width: 310px;
+  min-width: 250px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-top: 5px solid #d2652d;
+}
+
+.snip *,
+.snip *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.snip figcaption {
+  padding: 13% 10% 12%;
+}
+
+.snip figcaption:before {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #d2652d;
+  content: "\f10e";
+  font-family: "FontAwesome";
+  font-size: 32px;
+  font-style: normal;
+  left: 50%;
+  line-height: 60px;
+  position: absolute;
+  top: -30px;
+  width: 60px;
+}
+
+.snip h3 {
+  color: #3c3c3c;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 10px 0 5px;
+}
+
+.snip blockquote {
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 0 20px;
+}

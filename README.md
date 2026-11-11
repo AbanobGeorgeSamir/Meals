@@ -1,28 +1,36 @@
-# 🥗 Meals
+# Meals
 
-A responsive meals and restaurant showcase website built with HTML, CSS, and JavaScript — featuring a clean, modern design and mobile-first layout.
+Responsive restaurant landing page built with HTML, CSS, JavaScript and Bootstrap. It showcases a list of dishes and includes a sign-in form with client-side validation.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
 
-## ✨ Features
+## Features
 
-- 📱 Mobile-first, fully responsive layout
-- 🍽️ Attractive meal cards and category sections
-- 🎨 Modern visual design with clean typography
-- ⚡ Zero dependencies — pure HTML, CSS & JavaScript
+- Responsive layout with Bootstrap
+- "Latest Meals" section with dish images
+- Sign-in form with email format and password length validation and inline error messages
 
-## 🚀 Getting Started
+## Getting Started
+
+No build step is needed. Clone the repository and open `index.html` in a browser.
 
 ```bash
 git clone https://github.com/AbanobGeorgeSamir/Meals.git
 cd Meals
-# Open index.html in your browser
 ```
 
-Or simply open `index.html` directly — no build step required.
+## Project Structure
 
-## 👤 Author
+```text
+index.html     Page markup
+CSS/           Bootstrap and custom styles
+JavaScript/    Bootstrap scripts and form validation
+images/        Dish images
+```
 
-**Abanoub George Samir** — [LinkedIn](https://www.linkedin.com/in/abanob-george-samir) · [GitHub](https://github.com/AbanobGeorgeSamir)
+## Author
+
+**Abanoub George Samir** · Junior Full-Stack Developer · [Portfolio](https://devabanobgeorge.vercel.app) · [LinkedIn](https://www.linkedin.com/in/abanob-george-samir) · [GitHub](https://github.com/AbanobGeorgeSamir)
